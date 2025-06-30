@@ -1,14 +1,22 @@
 {
   "name": "glow-web",
   "version": "0.1.0",
+  "author": {
+    "name": "Yih-Cherng Lin",
+    "email": "yihchernglin8883@gmail.com"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.6.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -35,5 +43,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^6.8.1",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "styled-components": "^6.1.19"
   }
 }

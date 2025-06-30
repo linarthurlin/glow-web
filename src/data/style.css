@@ -1,0 +1,28 @@
+:root {
+	/* ------- default ------- */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	/* ------- colors ------- */
+	--primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--quinary-color: #f7f7f7;
+	--link-color: #855cf5;
+	/* ---------------------- */
+
+	/* ------- fonts ------- */
+	--primary-font: "Heebo", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+	--text-5xl: 3rem;     /* 48px */
+	--text-4xl: 2.25rem;  /* 36px */
+	--text-3xl: 1.875rem; /* 30px */
+	--text-2xl: 1.5rem;   /* 24px */
+	--text-xl: 1.25rem;   /* 20px */
+	--text-lg: 1.125rem;  /* 18px */
+	--text-base: 1rem;    /* 16px */
+	--text-sm: 0.875rem;  /* 14px */
+	--text-xs: 0.75rem;   /* 12px */
+	/* --------------------- */
+}

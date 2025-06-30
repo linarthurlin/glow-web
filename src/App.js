@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import ReactGA from "react-ga4";
+
+import Homepage from "./pages/homepage";
+
+import { TRACKING_ID } from "./data/tracking";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        if (TRACKING_ID !== "") {
+            ReactGA.initialize(TRACKING_ID);
+        }
+    }, []);
+
+    return (
+        <div className="App">
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
