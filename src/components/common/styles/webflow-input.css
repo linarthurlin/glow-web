@@ -46,16 +46,20 @@
     font-size: clamp(0.5rem, 3vw, 1rem);
     color: var(--quaternary-color);
     background: rgba(197, 197, 199, 0.4);
-    border: 2px solid;
-    border-color: var(--tertiary-color);
+    border: 3px solid;
+    border-color: rgba(50, 50, 50, 0.2);
     border-radius: 999px;
     padding: calc(var(--spacing) * 2) calc(var(--spacing) * 8);
     cursor: pointer;
-    transition: color 0.25s;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.25s, transform 0.3s ease;
+    white-space: nowrap
 }
 
 .webflow-button:hover {
     color: #333;
+    transform: translateY(-3px);
 }
 
 .webflow-underline {

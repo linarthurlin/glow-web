@@ -68,7 +68,7 @@ const Homepage = () => {
                                 <h1>Glow! Glow! Glow!</h1>
                             </div>
                             <div>
-                                <h2>Your built-in Smart Navigation</h2>
+                                <h2>Your Built-In Smart Navigation</h2>
                             </div>
                             <div>
                                 <WebflowInput></WebflowInput>
@@ -79,13 +79,21 @@ const Homepage = () => {
                     <div className="homepage-section-one">
                         <div className="homepage-cards-container">
                             <div className="homepage-cards">
-                                <h2>Your AI Assistance</h2>
-                            </div>
-                            <div className="homepage-cards">
-                                <h2>Your AI Assistance</h2>
-                            </div>
-                            <div className="homepage-cards">
-                                <h2>Your AI Assistance</h2>
+                                <div className="card-container">
+                                    <h2>🔍</h2>
+                                    <div className="card-content">
+                                        <h2 className="card-title">Intent-Aware Navigation</h2>
+                                        <p className="card-article">
+                                            The assistant doesn't just
+                                            keyword-match—it understands user
+                                            intent using natural language
+                                            processing. Whether someone types
+                                            "change my card" or "update billing
+                                            info," it knows they mean the same
+                                            thing and routes accordingly.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="homepage-cards">
                                 <h2>Your AI Assistance</h2>

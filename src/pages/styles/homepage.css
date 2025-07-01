@@ -5,6 +5,7 @@
 	/* background: transparent; */
 	min-height: 100%;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .homepage-container {
@@ -35,11 +36,14 @@
 
 .homepage-cover-title-container h1 {
 	margin: 0 auto;
-	margin-bottom: 10%;
+	margin-top: calc(var(--spacing) * 10);
+	margin-bottom: calc(var(--spacing) * 10);
 	font-size: var(--text-5xl);
 }
 
 .homepage-cover-title-container h2 {
+	margin-top: calc(var(--spacing) * 10);
+	margin-bottom: calc(var(--spacing) * 10);
 	font-size: var(--text-1xl);
 }
 
@@ -71,10 +75,10 @@
 .homepage-cards {
 	flex: 1 1 calc(33.333% - calc(var(--spacing) * 4));
 	min-width: 260px;
-	height: 500px;
+	height: clamp(350px, 70vh, 700px);
 	padding: calc(var(--spacing)*8);
 	box-sizing: border-box;
-	
+
 	background-color: rgba(101, 103, 107, 0.2);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
@@ -83,10 +87,22 @@
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;	
+	align-items: flex-start;
+	justify-content: flex-start;
 	transition: transform 0.3s ease;
 	color: var(--quinary-color);
+}
+
+.card-title {
+	font-weight: bolder;
+	font-size: 36px;
+	margin: calc(var(--spacing) * 4) 0;
+}
+
+.card-article {
+	font-size: 20px;
+	font-weight: lighter;
+	margin: calc(var(--spacing) * 4) 0;
 }
 
 .homepage-cards:hover {
