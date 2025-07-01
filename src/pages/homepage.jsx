@@ -68,7 +68,7 @@ const Homepage = () => {
                                 <h1>Glow! Glow! Glow!</h1>
                             </div>
                             <div>
-                                <h2>Your Built-In Smart Navigation</h2>
+                                <h2>Your Built-in Smart Navigation - ditch the manuals, just follow the GLOW!</h2>
                             </div>
                             <div>
                                 <WebflowInput></WebflowInput>
@@ -82,7 +82,9 @@ const Homepage = () => {
                                 <div className="card-container">
                                     <h2>🔍</h2>
                                     <div className="card-content">
-                                        <h2 className="card-title">Intent-Aware Navigation</h2>
+                                        <h2 className="card-title">
+                                            Intent-Aware Navigation
+                                        </h2>
                                         <p className="card-article">
                                             The assistant doesn't just
                                             keyword-match—it understands user
@@ -96,10 +98,40 @@ const Homepage = () => {
                                 </div>
                             </div>
                             <div className="homepage-cards">
-                                <h2>Your AI Assistance</h2>
+                                <div className="card-container">
+                                    <h2>✨</h2>
+                                    <div className="card-content">
+                                        <h2 className="card-title">
+                                            Real-Time Visual Guidance
+                                        </h2>
+                                        <p className="card-article">
+                                            Instead of vague text instructions,
+                                            users get on-screen visual cues—like
+                                            highlights, glows, or
+                                            animations—that gently guide their
+                                            clicks. It's like having a live
+                                            tutor built into the interface.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="homepage-cards">
-                                <h2>Your AI Assistance</h2>
+                                <div className="card-container">
+                                    <h2>📊</h2>
+                                    <div className="card-content">
+                                        <h2 className="card-title">
+                                            User Struggle Analytics
+                                        </h2>
+                                        <p className="card-article">
+                                            Built-in dashboard that shows where
+                                            users get stuck, what they ask for
+                                            most, and how long it takes them to
+                                            complete tasks—providing product
+                                            teams with insights to optimize UX
+                                            continuously.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

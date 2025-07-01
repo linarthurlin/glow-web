@@ -23,6 +23,8 @@
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
     transition: background 0.3s ease;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .webflow-input-wrapper:hover {
@@ -31,7 +33,7 @@
 
 .webflow-input {
     flex: 1;
-    font-size: clamp(0.85rem, 3vw, 1.2rem);
+    font-size: 1rem;
     color: var(--quaternary-color);
     background: transparent;
     border: none;
@@ -46,9 +48,11 @@
     font-size: clamp(0.5rem, 3vw, 1rem);
     color: var(--quaternary-color);
     background: rgba(197, 197, 199, 0.4);
-    border: 3px solid;
-    border-color: rgba(50, 50, 50, 0.2);
+    border: 2px solid;
+    border-color: rgba(200, 200, 200, 0.2);
     border-radius: 999px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     padding: calc(var(--spacing) * 2) calc(var(--spacing) * 8);
     cursor: pointer;
     justify-content: center;
@@ -65,19 +69,19 @@
 .webflow-underline {
     content: "";
     position: absolute;
-    left: 8%;
-    right: 8%;
+    left: 6%;
+    right: 6%;
     bottom: 0;
-    height: 3px;
+    height: 2px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     background: linear-gradient(to right,
-            #b294ff,
-            #57e6e6,
-            #feffb8,
-            #57e6e6,
-            #b294ff,
-            #57e6e6);
+            #dbddd4,
+            #fbfcc9,
+            #f7ecec,
+            #D1DAE0,
+            #bcc7c7,
+            #d2ddd4);
     background-size: 500% auto;
     animation: webflow-gradient 3s linear infinite;
 }

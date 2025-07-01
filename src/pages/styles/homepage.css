@@ -79,7 +79,7 @@
 	padding: calc(var(--spacing)*8);
 	box-sizing: border-box;
 
-	background-color: rgba(101, 103, 107, 0.2);
+	background-color: rgba(150, 150, 150, 0.2);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	border: 1px solid rgba(255, 255, 255, 0.2);

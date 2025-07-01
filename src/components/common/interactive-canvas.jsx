@@ -23,7 +23,7 @@ export default function InteractiveCanvas() {
     const maxDistance = SCALE * 10;
     const maxRadius = 5;
     const startColor = { r: 170, g: 170, b: 170, a: 0.2 };
-    const endColor = { r: 160, g: 273, b: 222, a: 0.5 };
+    const endColor = { r: 200, g: 210, b: 210, a: 0.5 };
 
     const generateDots = (width, height) => {
         const cols = Math.ceil(width / SCALE);
@@ -35,7 +35,7 @@ export default function InteractiveCanvas() {
                     x: x * SCALE,
                     y: y * SCALE,
                     radius: DOT_RADIUS,
-                    color: "rgba(endColor, 170, 170, 0.2)",
+                    color: "rgba(170, 170, 170, 0.2)",
                 });
             }
         }
