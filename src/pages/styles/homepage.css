@@ -1,7 +1,7 @@
 @import "../../data/style.css";
 
 .page-content {
-	background: linear-gradient(45deg, rgba(60, 0, 25, 1) 0%, rgba(0, 17, 43, 1) 100%);
+	background: var(--background-color);
 	/* background: transparent; */
 	min-height: 100%;
 	z-index: -1;

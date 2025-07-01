@@ -17,7 +17,8 @@
     border-radius: 999px;
     border: 1px solid;
     border-color: rgba(171, 189, 252, 0.1);
-    padding: 1rem 1.5rem;
+    color: var(--quaternary-color);
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
     background: rgba(57, 63, 84, 0.3);
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
@@ -38,14 +39,17 @@
 }
 
 .webflow-input::placeholder {
-    color: #999;
+    color: var(--quaternary-color);
 }
 
 .webflow-button {
-    font-size: clamp(1rem, 4vw, 1.6rem);
-    color: #999;
-    background: none;
-    border: none;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+    color: var(--quaternary-color);
+    background: rgba(197, 197, 199, 0.4);
+    border: 2px solid;
+    border-color: var(--tertiary-color);
+    border-radius: 999px;
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 8);
     cursor: pointer;
     transition: color 0.25s;
 }

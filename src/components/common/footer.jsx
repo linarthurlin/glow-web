@@ -7,8 +7,8 @@ const Footer = () => {
     return (
         <React.Fragment>
             <div className="footer">
-                <div className="footer-links">
-
+                <div className="footer-contents">
+                    <p>GLOW</p>
                 </div>
 
                 <div className="footer-credits">
