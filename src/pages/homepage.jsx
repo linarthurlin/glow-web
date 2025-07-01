@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navbar";
+import Footer from "../components/common/footer";
 import WebflowInput from "../components/common/webflow-input";
 import InteractiveCanvas from "../components/common/interactive-canvas";
 
@@ -57,9 +58,10 @@ const Homepage = () => {
 
             <div className="page-content">
                 <NavBar active="home" />
-                <InteractiveCanvas />
 
                 <div className="homepage-container">
+                    <InteractiveCanvas />
+
                     <div className="homepage-cover">
                         <div className="homepage-cover-title-container">
                             <div>
@@ -76,10 +78,25 @@ const Homepage = () => {
 
                     <div className="homepage-section-one">
                         <div className="homepage-cards-container">
-                            Test Covered
+                            <div className="homepage-cards">
+                                <h2>Your AI Assistance</h2>
+                            </div>
+                            <div className="homepage-cards">
+                                <h2>Your AI Assistance</h2>
+                            </div>
+                            <div className="homepage-cards">
+                                <h2>Your AI Assistance</h2>
+                            </div>
+                            <div className="homepage-cards">
+                                <h2>Your AI Assistance</h2>
+                            </div>
+                            <div className="homepage-cards">
+                                <h2>Your AI Assistance</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </React.Fragment>
     );
