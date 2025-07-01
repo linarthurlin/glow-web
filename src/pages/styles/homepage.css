@@ -6,6 +6,7 @@
 	min-height: 100%;
 	z-index: -1;
 	overflow: hidden;
+	font-family: 'Aspekta', ui-sans-serif, system-ui, sans-serif;
 }
 
 .homepage-container {
@@ -101,7 +102,7 @@
 
 .card-article {
 	font-size: 20px;
-	font-weight: lighter;
+	font-weight: normal;
 	margin: calc(var(--spacing) * 4) 0;
 }
 

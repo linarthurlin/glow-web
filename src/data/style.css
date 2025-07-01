@@ -14,7 +14,7 @@
 	/* ---------------------- */
 
 	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
+	--primary-font: 'Aspekta', ui-sans-serif, system-ui, sans-serif;
 	--secondary-font: "Roboto", sans-serif;
 	--text-5xl: 3rem;     /* 48px */
 	--text-4xl: 2.25rem;  /* 36px */
