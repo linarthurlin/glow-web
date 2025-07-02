@@ -17,6 +17,15 @@
 	width: 100%;
 }
 
+.homepage-logo-container {
+	position: absolute;
+	top: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+
 .homepage-cover {
 	display: flex;
 	flex-direction: column;
@@ -37,17 +46,69 @@
 
 .homepage-cover-title-container h1 {
 	margin: 0 auto;
-	margin-top: calc(var(--spacing) * 10);
-	margin-bottom: calc(var(--spacing) * 10);
+	margin-block: calc(var(--spacing) * 10);
 	font-size: var(--text-5xl);
 }
 
 .homepage-cover-title-container h2 {
-	margin-top: calc(var(--spacing) * 10);
-	margin-bottom: calc(var(--spacing) * 10);
+	margin-block: calc(var(--spacing) * 10);
 	font-size: var(--text-1xl);
 }
 
+.homepage-buttons-container {
+	margin-block: calc(var(--spacing) * 10);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.button-talk-to-sales {
+	height: calc(var(--spacing) * 12);
+	border-radius: .8rem;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding-inline: calc(var(--spacing) * 8);
+	font-family: var(--primary-font);
+	font-size: 1rem;
+	font-weight: 500;
+	background-color: var(--primary-color);
+	color: var(--quinary-color);
+	align-items: center;
+	cursor: pointer;
+}
+
+.button-talk-to-sales:hover {
+	background-color: var(--link-color);
+}
+
+.watch-our-demos {
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	height: calc(var(--spacing) * 12);
+	padding-inline: calc(var(--spacing) * 4);
+	gap: calc(var(--spacing) * 4);
+	border-radius: .8rem;
+
+	font-family: var(--primary-font);
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--quinary-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.watch-our-demos:hover {
+	background-color: rgba(242, 105, 92, 0.3);
+}
+
+.watch-our-demos img {
+	height: calc(var(--spacing) * 8);
+	width: auto;
+	display: block;
+}
+
+/* ------- section one ------- */
 .homepage-section-one {
 	width: 100%;
 	padding: calc(var(--spacing)*8) calc(var(--spacing)*32);
@@ -59,6 +120,7 @@
 	position: relative;
 }
 
+/* ------- cards ------- */
 .homepage-cards-container {
 	width: 100%;
 	padding: calc(var(--spacing) * 4);
