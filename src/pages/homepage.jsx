@@ -40,7 +40,7 @@ const Homepage = () => {
                 width: `${rect.width}px`,
                 height: `${rect.height}px`,
                 transform: `translate(${rect.left - containerRect.left}px, ${
-                    rect.top - containerRect.top
+                    rect.top - containerRect.top - 6
                 }px)`,
                 opacity: 1,
             });

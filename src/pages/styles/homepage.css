@@ -183,5 +183,4 @@
 
 .homepage-sliding-card.active {
 	opacity: 1;
-	transform: translateY(-6px);
 }
