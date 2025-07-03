@@ -1,0 +1,25 @@
+@import "../../../data/style.css";
+
+/* ------- cards ------- */
+
+.card-item {
+    text-decoration: none;
+    color: var(--quinary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-item:hover {
+    color: var(--primary-color);
+}
+
+.card-title {
+    font-weight: bolder;
+    font-size: 36px;
+    margin: calc(var(--spacing) * 4) 0;
+}
+
+.card-article {
+    font-size: 20px;
+    font-weight: normal;
+    margin: calc(var(--spacing) * 4) 0;
+}
