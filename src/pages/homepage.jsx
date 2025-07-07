@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 
-import {
-    IconSquareRoundedArrowRight,
-} from "@tabler/icons-react";
+import { IconSquareRoundedArrowRight } from "@tabler/icons-react";
 
 import Logo from "../components/common/Logo";
 import Card from "../components/common/card";
@@ -11,6 +9,8 @@ import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import WebflowInput from "../components/common/webflow-input";
 import InteractiveCanvas from "../components/common/interactive-canvas";
+
+import ChatBot from "../components/chatbot/chatbot";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -166,8 +166,7 @@ const Homepage = () => {
                                 style={{
                                     position: "absolute",
                                     pointerEvents: "none",
-                                    transition:
-                                        "all 0.5s ease-in-out",
+                                    transition: "all 0.5s ease-in-out",
                                     borderRadius: "2rem",
                                     background: "var(--quinary-color)",
                                     boxShadow:
@@ -195,6 +194,9 @@ const Homepage = () => {
 
                         <div style={{ marginTop: "20%" }}>
                             <WebflowInput />
+                        </div>
+                        <div style={{ marginTop: "20%" }}>
+                            <ChatBot />
                         </div>
                     </div>
                 </div>

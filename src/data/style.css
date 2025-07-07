@@ -10,7 +10,8 @@
 	--quaternary-color: #e4e4e7;
 	--quinary-color: #f7f7f7;
 	--link-color: #f2695c;
-	--background-color: linear-gradient(0deg,rgba(255, 222, 212, 1) 0%, rgba(0, 0, 64, 1) 100%);
+	/* --background-color: linear-gradient(0deg,rgba(255, 222, 212, 1) 0%, rgba(0, 0, 64, 1) 100%); */
+	--background-color: rgb(17, 20, 24);
 	/* ---------------------- */
 
 	/* ------- fonts ------- */

@@ -1,5 +1,4 @@
 import {
-    IconSquareRoundedArrowRight,
     IconSearch,
     IconEyeSpark,
     IconReportAnalytics,
