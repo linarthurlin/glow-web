@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 import { IconSquareRoundedArrowRight } from "@tabler/icons-react";
 
+// Components
 import Logo from "../components/common/Logo";
 import Card from "../components/common/card";
 import Header from "../components/common/header";
@@ -10,7 +11,11 @@ import Footer from "../components/common/footer";
 import WebflowInput from "../components/common/webflow-input";
 import InteractiveCanvas from "../components/common/interactive-canvas";
 
+// Chatbot
 import ChatBot from "../components/chatbot/chatbot";
+
+// Actions
+import LinkGlowScanner from "../components/extension/actions";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -145,7 +150,8 @@ const Homepage = () => {
                                 <button className="button-talk-to-sales">
                                     Talk to sales
                                 </button>
-                                <a class="watch-our-demos" href="/">
+                                <LinkGlowScanner />
+                                <a className="watch-our-demos" href="/">
                                     Watch our demos
                                     <IconSquareRoundedArrowRight
                                         stroke={2}

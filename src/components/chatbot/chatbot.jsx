@@ -3,6 +3,8 @@ import axios from "axios";
 
 import "./styles/chatbot.css";
 
+import { drawOverlayBox } from "../extension/actions";
+
 const ChatBot = () => {
     const [input, setInput] = useState("");
     const [messages, setMessages] = useState([]);
@@ -16,6 +18,21 @@ const ChatBot = () => {
         }
     }, [messages]);
 
+    const findMatchingElement = ({ targetText, tagNames = [], role }) => {
+        const allElements = document.querySelectorAll(tagNames.join(","));
+        for (const el of allElements) {
+            const text = el.innerText || el.textContent || "";
+            const hasRole = role ? el.getAttribute("role") === role : true;
+            if (
+                text.trim().toLowerCase().includes(targetText.toLowerCase()) &&
+                hasRole
+            ) {
+                return el;
+            }
+        }
+        return null;
+    };
+
     const handleSend = async () => {
         if (!input.trim()) return;
 
@@ -26,21 +43,36 @@ const ChatBot = () => {
             .join("\n\n");
 
         const prompt = `
-            You are an assistant/chatbot helping the user with questions about the current web page — or general conversation.
-
+            You are an assistant/chatbot helping the user with following request:
+            1. describe an element on the page
+            2. questions about the current web page
+            3. general conversation.
+    
             User message: ${input}
-
+    
             Below is the current web page content in case it helps:
-
+    
             HTML:
             ${pageHTML}
-
+    
             Visible Text:
             ${pageText}
-
+    
             JavaScript Code:
             ${pageScripts}
-
+    
+            Task:
+            - Return a JSON object containing keywords or phrases to match DOM elements.
+            - Prioritize visible text content.
+            - If the user mentions a button, look for elements like <button> or [role="button"] or <a>.
+    
+            Example format:
+            {
+              "targetText": "Demos",
+              "tagNames": ["button", "a"],
+              "attributes": "button"
+            }
+    
             Instructions:
             - If the user's message is general (e.g., greetings, casual questions), respond naturally and conversationally without referencing the web page.
             - If the user's message clearly relates to the content, structure, or functionality of the web page, then use the page data to answer.
@@ -63,7 +95,14 @@ const ChatBot = () => {
             ]);
             setInput("");
         } catch (err) {
-            console.error("Error contacting Gemini API:", err);
+            console.error("Error contacting Gemini API and server:", err);
+            setMessages([
+                ...newMessages,
+                {
+                    role: "assistant",
+                    content: "⚠️ Failed to contact Gemini server.",
+                },
+            ]);
         } finally {
             setIsTyping(false);
         }
